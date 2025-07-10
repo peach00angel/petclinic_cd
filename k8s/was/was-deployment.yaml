@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: was-deployment
+spec:
+  replicas: 2 
+  selector:
+    matchLabels:
+      app: was
+  template:
+    metadata:
+      labels:
+        app: was
+    spec:
+      containers:
+      - name: was
+        image: gcr.io/kdt1-finalproject/petclinic:latest #GCR에 만든 이미지
+        ports:
+          - containerPort: 8080
