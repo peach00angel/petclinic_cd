@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: was
-        image: gcr.io/kdt1-finalproject/petclinic:20250711012642
+        image: gcr.io/kdt1-finalproject/petclinic-was:1
         ports:
           - containerPort: 8080
