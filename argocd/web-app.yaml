@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/peach00angel/petclinic_cd.git  # 🔁 GitHub 주소로 수정
-    targetRevision: main
+    targetRevision: master
     path: k8s/web
   destination:
     server: https://kubernetes.default.svc
